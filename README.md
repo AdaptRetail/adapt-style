@@ -67,3 +67,28 @@ To turn on clearfix just change the css variable
 ```scss
 $clearfix: false; // If true we include clearfix. (Typically not used in banners.)
 ```
+
+## Mixins
+
+Mixins contains css logics and this framework has som nice helpers for help you write DRY code.
+
+### Background
+
+If you want to use a background image, this mixin is for you.
+
+```scss
+.background {
+
+    @include background-image;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+
+    @include background-image( red, bottom left, cover );
+    // background: red;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: bottom left;
+
+}
+```
