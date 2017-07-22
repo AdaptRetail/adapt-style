@@ -92,3 +92,24 @@ If you want to use a background image, this mixin is for you.
 
 }
 ```
+
+### Bomb
+
+Bomb mixin helps you create logic for centereing content inside a box.
+
+![Bomb illustration](images/bomb-illustration.png)
+
+```scss
+.bomb {
+    @include bomb;
+    background-color: red;
+    border-radius: 50%;
+}
+
+// Create oval bomb
+.bomb {
+    @include bomb( 50% );
+    background-color: red;
+    border-radius: 50%;
+}
+```
