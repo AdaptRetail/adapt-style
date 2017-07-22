@@ -9,11 +9,6 @@ The micro framework includes
 ## Good starting point
 For a good starting point of creating ads see the [Adapt banner template](https://github.com/AdaptRetail/banner-template).
 
-## Configuration
-```scss
-$clearfix: false; // If true we include clearfix. (Typically not used in banners.)
-```
-
 ## Grid
 
 The micro grid is used 
@@ -62,3 +57,13 @@ If you use is narrow, and you need to have a child calculate 100% height, you sh
 `.column.is-filled` is actually a `css` hack and will set the imidiate child as height 100% of the container.
 
 > If not using this class you will have trouble filling the childrens height of 100%.
+
+
+## Clearfix
+
+`.clearfix` is another css hack, and helps setting the correct height of elements that uses `float` attibute.
+
+To turn on clearfix just change the css variable
+```scss
+$clearfix: false; // If true we include clearfix. (Typically not used in banners.)
+```
