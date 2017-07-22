@@ -1,0 +1,19 @@
+{
+  "name": "@adapt-retail/banner-style",
+  "version": "0.0.1",
+  "description": "Core design features for web banners.",
+  "main": "src/main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaptRetail/banner-style.git"
+  },
+  "author": "Adapt Retail",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaptRetail/banner-style/issues"
+  },
+  "homepage": "https://github.com/AdaptRetail/banner-style#readme"
+}
