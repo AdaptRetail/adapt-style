@@ -31,9 +31,21 @@ Add `.is-vertical` to the grid if you want it to flow downwards.
 <div class="grid is-vertical"></div>
 ```
 
+### `.grid.is-vertical`
+
+Changes the flex direction of the grid to go top to bottom instead of left to right
+
+### `.grid.is-vcentered`
+
+Position children based on center
+
+### `.grid.is-vbottom`
+
+Position children from bottom to top
+
 ### Special columns
 
-We have a couble of
+We have a coule of special classes for columns. This is for helping distribute the objects if you want to only make the elements use the needed spacing, and fill them afterwards.
 
 #### Is narrow
 
