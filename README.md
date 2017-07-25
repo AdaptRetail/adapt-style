@@ -7,6 +7,18 @@ The micro framework includes
 - Smart grid using `flexbox`.
 - [Bomb logic element](#bomb)
 
+## Quick install
+
+### NPM
+```bash
+npm install @adapt-retail/banner-style
+```
+
+### YARN
+```bash
+yarn add @adapt-retail/banner-style
+```
+
 ## Good starting point
 For a good starting point of creating ads see the [Adapt banner template](https://github.com/AdaptRetail/banner-template).
 
