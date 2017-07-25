@@ -5,6 +5,7 @@ Banner helper is a micro `sass` framework for helping you out creating web banne
 
 The micro framework includes
 - Smart grid using `flexbox`.
+- [Bomb logic element](#bomb)
 
 ## Good starting point
 For a good starting point of creating ads see the [Adapt banner template](https://github.com/AdaptRetail/banner-template).
@@ -17,6 +18,7 @@ Each column will by default take eaqualy space of the widthj
 
 ```html
 <div class="grid">
+    <div class="column"></div>
     <div class="column"></div>
 </div>
 ```
@@ -42,7 +44,7 @@ Position children from bottom to top
 
 We have a coule of special classes for columns. This is for helping distribute the objects if you want to only make the elements use the needed spacing, and fill them afterwards.
 
-#### Is narrow
+#### `.column.is-narrow`
 
 The `.column.is-narrow` class does not take up any more space that the children needs.
 
@@ -51,7 +53,7 @@ The `.column.is-narrow` class does not take up any more space that the children 
 > This means that the `.is-narrow` parent and child will be in conflict.
 > Ignoring this will cause height flickering in some cases.
 
-#### Is filled
+#### `.column.is-filled`
 
 If you use is narrow, and you need to have a child calculate 100% height, you should use `.is-cilled.`
 `.column.is-filled` is actually a `css` hack and will set the imidiate child as height 100% of the container.
@@ -93,6 +95,7 @@ If you want to use a background image, this mixin is for you.
 }
 ```
 
+<a name="bomb"></a>
 ### Bomb
 
 Bomb mixin helps you create logic for centereing content inside a box.
