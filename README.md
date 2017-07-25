@@ -114,6 +114,14 @@ Bomb mixin helps you create logic for centereing content inside a box.
 
 ![Bomb illustration](images/bomb-illustration.png)
 
+#### HTML element
+```html
+<div class="bomb">
+    499
+</div>
+```
+
+#### CSS
 ```scss
 .bomb {
     @include bomb;
