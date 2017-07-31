@@ -54,13 +54,13 @@ Position children from bottom to top
 
 ### Special columns
 
-We have a coule of special classes for columns. This is for helping distribute the objects if you want to only make the elements use the needed spacing, and fill them afterwards.
+We have a coule of special classes for columns. This is to help distribute the objects if you want it to fill the container or just use the space it needs.
 
 #### `.column.is-narrow`
 
 The `.column.is-narrow` class does not take up any more space that the children needs.
 
-> Warning: Do not use anythings that calculates in `%` of the height directly inside the `.is-narrow`.
+> Warning: Do not use anythings that calculates by the height of the column.
 > This is because calculating height need to have a set parent height.
 > This means that the `.is-narrow` parent and child will be in conflict.
 > Ignoring this will cause height flickering in some cases.
@@ -72,6 +72,15 @@ If you use is narrow, and you need to have a child calculate 100% height, you sh
 
 > If not using this class you will have trouble filling the childrens height of 100%.
 
+```html
+<div class="grid">
+    <div class="column is-filled">
+        <div> <!-- Height is 100% -->
+            ... Your content ...
+        </div>
+    </div>
+</div>
+```
 
 ## Clearfix
 
@@ -114,14 +123,7 @@ Bomb mixin helps you create logic for centereing content inside a box.
 
 ![Bomb illustration](images/bomb-illustration.png)
 
-#### HTML element
-```html
-<div class="bomb">
-    499
-</div>
-```
-
-#### CSS
+#### SASS
 ```scss
 .bomb {
     @include bomb;
@@ -135,4 +137,11 @@ Bomb mixin helps you create logic for centereing content inside a box.
     background-color: red;
     border-radius: 50%;
 }
+```
+
+#### HTML element
+```html
+<div class="bomb">
+    499
+</div>
 ```
