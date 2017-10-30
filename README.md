@@ -24,9 +24,11 @@ For a good starting point of creating ads see the [Adapt banner template](https:
 
 ## Grid
 
-The micro grid is used 
+The framework includes a micro grid system. To activate it, just add the `@include banner-grid` mixin where you want your grid to show.
 
-Each column will by default take eaqualy space of the widthj
+### Usage
+
+Each column will by default take equally space of the width
 
 ```html
 <div class="grid">
@@ -54,7 +56,7 @@ Position children from bottom to top
 
 ### Special columns
 
-We have a coule of special classes for columns. This is to help distribute the objects if you want it to fill the container or just use the space it needs.
+We have a couple of special classes for columns. This is to help distribute the objects if you want it to fill the container or just use the space it needs.
 
 #### `.column.is-narrow`
 
@@ -68,9 +70,9 @@ The `.column.is-narrow` class does not take up any more space that the children 
 #### `.column.is-filled`
 
 If you use is narrow, and you need to have a child calculate 100% height, you should use `.is-cilled.`
-`.column.is-filled` is actually a `css` hack and will set the imidiate child as height 100% of the container.
+`.column.is-filled` is actually a `css` hack and will set the first child as height 100% of the container.
 
-> If not using this class you will have trouble filling the childrens height of 100%.
+> If not using this class you will have trouble filling the children height of 100%.
 
 ```html
 <div class="grid">
