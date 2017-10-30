@@ -88,10 +88,7 @@ If you use is narrow, and you need to have a child calculate 100% height, you sh
 
 `.clearfix` is another css hack, and helps setting the correct height of elements that uses `float` attibute.
 
-To turn on clearfix just change the css variable
-```scss
-$clearfix: false; // If true we include clearfix. (Typically not used in banners.)
-```
+To turn on clearfix include the `@include clearfix` mixin.
 
 ## Mixins
 
