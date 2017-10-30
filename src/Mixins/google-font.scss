@@ -1,0 +1,3 @@
+@mixin google-font( $font-name ) {
+    @import url( "https://fonts.googleapis.com/css?family=#{str-replace($font-name, " ", "+")}" );
+}
