@@ -1,4 +1,4 @@
-@mixin background-image( $background: false, $position: center, $size: contain ) {
+@mixin background-image( $background: false, $size: contain, $position: center ) {
     @if $background {
         background: $background;
     }
