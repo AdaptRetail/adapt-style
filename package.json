@@ -4,7 +4,8 @@
   "description": "Core design features for web banners.",
   "main": "src/main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "tdd": "executor 'npm run test' --watch='**/*' --ignore='node_modules/' --ignore='dist/'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/AdaptRetail/banner-style/issues"
   },
-  "homepage": "https://github.com/AdaptRetail/banner-style#readme"
+  "homepage": "https://github.com/AdaptRetail/banner-style#readme",
+  "devDependencies": {
+    "@lassehaslev/executor": "^1.0.1",
+    "ava": "^0.24.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "sass-google-fonts": "^1.0.1"
+  }
 }
