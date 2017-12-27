@@ -24,5 +24,10 @@
   },
   "dependencies": {
     "sass-google-fonts": "^1.0.1"
+  },
+  "ava": {
+    "require": [
+      "./test/helpers/compile-sass.js"
+    ]
   }
 }
