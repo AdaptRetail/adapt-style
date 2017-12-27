@@ -1,5 +1,5 @@
-# Banner helper [![Build Status](https://travis-ci.org/AdaptRetail/banner-style.svg?branch=master)](https://travis-ci.org/AdaptRetail/banner-style)
-> Micro framework for building banners. 
+# @adapt-retail/banner-style [![Build Status](https://travis-ci.org/AdaptRetail/banner-style.svg?branch=master)](https://travis-ci.org/AdaptRetail/banner-style)
+> Micro style framework for building banners. 
 
 Banner helper is a micro `sass` framework for helping you out creating web banners.
 
