@@ -1,21 +1,8 @@
 import test from 'ava';
-import sass from 'node-sass';
-import path from 'path';
-
-var renderSass = function( content ) {
-    var result = sass.renderSync({
-        includePaths: [
-            path.resolve( '.' ),
-        ],
-        outputStyle: 'compressed',
-        data: content,
-    });
-    return result.css.toString().slice( 0, -1 );
-}
 
 test( 'it can create a bomb element', t => {
 
-    var sass = renderSass( `
+    var sass = global.renderSass( `
         @import 'src/main.scss';
         .test {
             @include bomb;
@@ -27,7 +14,7 @@ test( 'it can create a bomb element', t => {
 } );
 
 test( 'it can set the height ratio', t => {
-    var sass = renderSass( `
+    var sass = global.renderSass( `
         @import 'src/main.scss';
         .test {
             @include bomb( 50% );
