@@ -94,6 +94,14 @@ To turn on clearfix include the `@include clearfix` mixin.
 
 Mixins contains css logics and this framework has som nice helpers for help you write DRY code.
 
+### Google fonts
+
+We include the [sass-google-fonts](https://github.com/LasseHaslev/sass-google-fonts) to make it easy to get the google fonts.
+
+```scss
+@include google-font( 'Lobster' );
+```
+
 ### Background
 
 If you want to use a background image, this mixin is for you.
