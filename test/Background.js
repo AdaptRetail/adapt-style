@@ -5,8 +5,23 @@ import path from 'path';
 var renderSass = function( content ) {
     var result = sass.renderSync({
         includePaths: [
-            path.resolve( '.' ),
+            // path.resolve( '.' ),
+            // path.resolve( '../node_modules' ),
+            '.',
+            'node_modules',
         ],
+        importer: function( url, prev, done ) {
+
+            if ( ! url.match( /^[~]/ )) {
+                return;
+            }
+
+            url = url.replace( /^[~]/, path.resolve( 'node_modules' ) + '/' );
+
+            return {
+                file: url,
+            };
+        },
         outputStyle: 'compressed',
         data: content,
     });
